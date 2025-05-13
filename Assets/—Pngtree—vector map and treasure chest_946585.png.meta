@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 34dfcda217a3f8d47807ca8a9bbd2de3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3001061549004137020
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_0"
+  - first:
+      213: 5297678964704973305
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_1"
+  - first:
+      213: -2373727852882767684
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_2"
+  - first:
+      213: -7685550518579653587
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_3"
+  - first:
+      213: 2842263333919543429
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_4"
+  - first:
+      213: 1799257363309792481
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_5"
+  - first:
+      213: 6780532908670988049
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_6"
+  - first:
+      213: 592991327400933582
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_7"
+  - first:
+      213: -9173760040664989896
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_8"
+  - first:
+      213: -8057160359190761197
+    second: "\u2014Pngtree\u2014vector map and treasure chest_946585_9"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_0"
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 231
+        width: 683
+        height: 691
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32a9791499e5a920800000000000000
+      internalID: 3001061549004137020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_1"
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 48
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f19c4933f2258940800000000000000
+      internalID: 5297678964704973305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_2"
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 48
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0d8772813de0fd0800000000000000
+      internalID: -2373727852882767684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_3"
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 41
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d249dbce580775590800000000000000
+      internalID: -7685550518579653587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_4"
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 67
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5805468717fb17720800000000000000
+      internalID: 2842263333919543429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_5"
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 48
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec069ff90f38f810800000000000000
+      internalID: 1799257363309792481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_6"
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 48
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f2e2171ca491e50800000000000000
+      internalID: 6780532908670988049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_7"
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 48
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8be90787aba3800800000000000000
+      internalID: 592991327400933582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_8"
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 41
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f7d7109d140b080800000000000000
+      internalID: -9173760040664989896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014vector map and treasure chest_946585_9"
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 42
+        width: 142
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311731c87573f2090800000000000000
+      internalID: -8057160359190761197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_0": 3001061549004137020
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_1": 5297678964704973305
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_2": -2373727852882767684
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_3": -7685550518579653587
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_4": 2842263333919543429
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_5": 1799257363309792481
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_6": 6780532908670988049
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_7": 592991327400933582
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_8": -9173760040664989896
+      "\u2014Pngtree\u2014vector map and treasure chest_946585_9": -8057160359190761197
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
