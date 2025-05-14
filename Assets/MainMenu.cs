@@ -3,13 +3,23 @@
 
 
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public void StoryScene()
+    {
+        SceneManager.LoadScene("CutScene");
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene("TREASURE-LADEN EAGLES");
+    }
+
+    public void Introgame()
+    {
+        SceneManager.LoadScene("EndIntro");
     }
     public void QuitGame()
     {

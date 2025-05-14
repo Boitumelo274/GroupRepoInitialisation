@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TREASURE-LADEN EAGLES.unity
     guid: daabc2e64d82002419fa74ce8a03c54c
+  - enabled: 1
+    path: Assets/CutScene.unity
+    guid: 74380049c9c415d45bbc12c9c3e74af5
+  - enabled: 1
+    path: Assets/Scenes/EndIntro.unity
+    guid: 7937691d7eddf754598e061df8a86ad4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
