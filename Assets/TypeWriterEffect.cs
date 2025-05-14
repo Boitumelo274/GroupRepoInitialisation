@@ -11,6 +11,10 @@ public class TypeWriterEffect : MonoBehaviour
     public GameObject startButton;
     public float startDelay = 0f;
 
+    public AudioSource audioSource;
+    public AudioClip typingClip;
+    public float soundDelay = 0.2f;
+
     private bool isTyping = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,15 +37,15 @@ public class TypeWriterEffect : MonoBehaviour
         foreach (char c in fullText)
         {
             textComponent.text += c;
-            if(!Input.anyKeyDown)
-            {
-                yield return new WaitForSeconds(delay);
 
-            }
-            else
+            if (typingClip != null && audioSource != null)
             {
-                break;
+                audioSource.PlayOneShot(typingClip);
+                yield return new WaitForSeconds(soundDelay);
             }
+
+            
+            yield return new WaitForSeconds(0.05f);
 
         }
         textComponent.text = fullText;
