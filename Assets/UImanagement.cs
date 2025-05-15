@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class UImanagement : MonoBehaviour
 {
+    public GameObject winningPanel;
     public GameObject gameOverMenu;
     private int score;
     public Text scoreText;
@@ -18,6 +19,8 @@ public class UImanagement : MonoBehaviour
         Movement.OnGameOver += EnableGameOverMenu;
     }
 
+  
+
     private void OnDisable()
     {
         Movement.OnGameOver -= EnableGameOverMenu;
@@ -25,22 +28,27 @@ public class UImanagement : MonoBehaviour
 
 
 
-    public void RetryGame()
+    
+    public void RestartGame()
     {
-        UpdateScoreUI();
-
+       
         Time.timeScale = 1f;
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
-        
+        SceneManager.LoadScene("TREASURE-LADEN EAGLES");
+
     }
+
 
     public void EnableGameOverMenu()
     {
         gameOverMenu.SetActive(true);
     }
 
-  
+    public void EnableWinningPanel()
+    {
+        winningPanel.SetActive(true);
+    }
+
+
     public void AddScore(int amount)
     {
         score += amount;
