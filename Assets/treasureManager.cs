@@ -10,6 +10,11 @@ public class TreasureManager : MonoBehaviour
     private int treasures; 
     [SerializeField] private TMP_Text treasuresDisplay;
 
+    [SerializeField] private int winGoal = 450;
+    [SerializeField] private GameObject winPanel;
+    private bool hasWon = false;
+
+    public GameObject winningPanel; 
 
     private void Awake()
     {
@@ -21,7 +26,7 @@ public class TreasureManager : MonoBehaviour
         }
     }
 
-    private void OnGUI()
+    private void UpdateUI()
     {
         if(treasuresDisplay != null)
         {
@@ -32,10 +37,31 @@ public class TreasureManager : MonoBehaviour
 
     public void ChangeTreasures(int amount)
     {
-        treasures += amount; 
+        treasures += amount;
+        UpdateUI();
 
+        if(treasures >= winGoal && !hasWon)
+        {
+            hasWon = true;
+            WinGame();
+        }
     }
 
+    private void Start()
+    {
+
+        UpdateUI();
+    }
+
+   
+    private void WinGame()
+    {
+        Debug.Log("You Win!");
+        FindObjectOfType<UImanagement>()?.EnableWinningPanel();
+
+
+        Time.timeScale = 0f;
+    }
 
 
 }
