@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gameLeaf_0: 2853179710569639274
+      gameLeaf_1: -512718978146367491
+      gameLeaf_2: 624601360565317288
+      gameLeaf_3: 4764876555494108980
+      gameLeaf_4: 744811755672224967
+      gameLeaf_5: 1007022586269527553
+      gameLeaf_6: -534080334135159872
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
