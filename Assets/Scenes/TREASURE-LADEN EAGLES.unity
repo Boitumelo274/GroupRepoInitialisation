@@ -3272,8 +3272,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59.4, y: -86.71661}
-  m_SizeDelta: {x: 183.4052, y: 45.0275}
+  m_AnchoredPosition: {x: -79.137, y: -100.3044}
+  m_SizeDelta: {x: 268.38, y: 61.6363}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328480883
 MonoBehaviour:
@@ -3344,7 +3344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.82641506, g: 0.6780787, b: 0.116945416, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6167,9 +6167,30 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.599977, y: 13.716614}
+  m_AnchoredPosition: {x: 59, y: 13.716614}
   m_SizeDelta: {x: 43.203003, y: 27.431198}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &660254279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5954750001956329985, guid: 34046118162963d40b3cad846ee73311, type: 3}
+  m_PrefabInstance: {fileID: 7264927297918033196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &660254285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660254279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e1b3e16a4a3024097d384d0262b4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasuresDisplay: {fileID: 0}
+  winGoal: 450
+  winPanel: {fileID: 0}
+  winningPanel: {fileID: 0}
 --- !u!1 &661804473
 GameObject:
   m_ObjectHideFlags: 0
@@ -10028,7 +10049,7 @@ Transform:
   m_GameObject: {fileID: 1092743978}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.59, y: 0.54, z: -0.07275761}
+  m_LocalPosition: {x: -2.59, y: 2.65, z: -0.07275761}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11187,6 +11208,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1259720669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9150956417861388846, guid: 34046118162963d40b3cad846ee73311, type: 3}
+  m_PrefabInstance: {fileID: 7264927297918033196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1259720675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259720669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e1b3e16a4a3024097d384d0262b4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasuresDisplay: {fileID: 0}
+  winGoal: 450
+  winPanel: {fileID: 0}
+  winningPanel: {fileID: 0}
 --- !u!1 &1260227135
 GameObject:
   m_ObjectHideFlags: 0
@@ -14175,6 +14217,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1643637048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1998904634319393517, guid: 34046118162963d40b3cad846ee73311, type: 3}
+  m_PrefabInstance: {fileID: 7264927297918033196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1643637054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643637048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e1b3e16a4a3024097d384d0262b4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasuresDisplay: {fileID: 0}
+  winGoal: 450
+  winPanel: {fileID: 0}
+  winningPanel: {fileID: 0}
 --- !u!1 &1662649075
 GameObject:
   m_ObjectHideFlags: 0
@@ -15731,7 +15794,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Retry
+  m_text: More Options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15758,7 +15821,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.65
+  m_fontSize: 39.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -16406,6 +16469,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2012190541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1850380272782886498, guid: 34046118162963d40b3cad846ee73311, type: 3}
+  m_PrefabInstance: {fileID: 7264927297918033196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2012190547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012190541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e1b3e16a4a3024097d384d0262b4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasuresDisplay: {fileID: 0}
+  winGoal: 450
+  winPanel: {fileID: 0}
+  winningPanel: {fileID: 0}
 --- !u!1 &2021737753
 GameObject:
   m_ObjectHideFlags: 0
@@ -17450,7 +17534,7 @@ GameObject:
   - component: {fileID: 2140812283}
   - component: {fileID: 2140812282}
   m_Layer: 5
-  m_Name: RetryButton
+  m_Name: MoreOptionsbutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17473,8 +17557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.8841, y: -8.4557}
-  m_SizeDelta: {x: 177.0318, y: 44.3425}
+  m_AnchoredPosition: {x: -79.137, y: -10.6609}
+  m_SizeDelta: {x: 268.38, y: 65.9339}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140812282
 MonoBehaviour:
@@ -17545,7 +17629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.827451, g: 0.6784314, b: 0.11764706, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17823,7 +17907,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1850380272782886498, guid: 34046118162963d40b3cad846ee73311, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2012190547}
+    - targetCorrespondingSourceObject: {fileID: 5954750001956329985, guid: 34046118162963d40b3cad846ee73311, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 660254285}
+    - targetCorrespondingSourceObject: {fileID: 1998904634319393517, guid: 34046118162963d40b3cad846ee73311, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1643637054}
+    - targetCorrespondingSourceObject: {fileID: 9150956417861388846, guid: 34046118162963d40b3cad846ee73311, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1259720675}
   m_SourcePrefab: {fileID: 100100000, guid: 34046118162963d40b3cad846ee73311, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

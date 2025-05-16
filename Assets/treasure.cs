@@ -37,38 +37,6 @@ public class treasure : MonoBehaviour
         }
     }
 
-
-
-
-    public static treasure Instance;
-
-    private int score;
-    public Text scoreText;
-
-    void Awake()
-    {
-        Instance = this;
-    }
-
-    public void AddScore(int amount)
-    {
-        score += amount;
-        UpdateScoreUI();
-    }
-
-    public void ResetScore()
-    {
-        score = 0;
-        UpdateScoreUI();
-    }
-
-    void UpdateScoreUI()
-    {
-        if (scoreText != null)
-            scoreText.text = "Score: " + score.ToString();
-    }
-
-
     void Update()
     {
         transform.position += Vector3.down * movespeed * Time.deltaTime;

@@ -39,6 +39,7 @@ public class TreasureManager : MonoBehaviour
     {
         treasures += amount;
         UpdateUI();
+        Debug.Log("Treasure");
 
         if(treasures >= winGoal && !hasWon)
         {
@@ -49,6 +50,11 @@ public class TreasureManager : MonoBehaviour
 
     private void Start()
     {
+        if(treasuresDisplay==null)
+        {
+            treasuresDisplay = GameObject.Find("treasuresDisplay")?.GetComponent<TMP_Text>();
+
+        }
 
         UpdateUI();
     }

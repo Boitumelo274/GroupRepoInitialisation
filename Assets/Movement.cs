@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour
                 gameOverPanel.SetActive(true);
           }
             OnGameOver?.Invoke();
-         Time.timeScale= 0f;// lets pause the game.
+            Time.timeScale = 0f; 
 
 
         }

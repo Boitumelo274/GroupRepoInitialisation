@@ -33,7 +33,7 @@ public class UImanagement : MonoBehaviour
     {
        
         Time.timeScale = 1f;
-        SceneManager.LoadScene("TREASURE-LADEN EAGLES");
+        SceneManager.LoadScene("gameOverScene");
 
     }
 
