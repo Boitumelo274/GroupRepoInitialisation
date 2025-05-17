@@ -18,7 +18,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("TREASURE-LADEN EAGLES");
     }
 
-    
+    public void mainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void Introgame()
     {
