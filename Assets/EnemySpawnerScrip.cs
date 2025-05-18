@@ -19,7 +19,7 @@ public class EnemySpawnerScrip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer < spawnRate)
+       /* if (timer < spawnRate)
         {
             timer = timer + Time.deltaTime;
         }
@@ -27,7 +27,7 @@ public class EnemySpawnerScrip : MonoBehaviour
         {
             Instantiate(enemy, transform.position, transform.rotation);
             timer = 0;
-        }
+        }*/
 
 
     }

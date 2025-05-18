@@ -20,7 +20,8 @@ public class treasure : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !hasTriggered)
-        {
+        {   
+           // Inventory.Instance.AddTeasure(name.)
             hasTriggered = true;
             treasureManager.ChangeTreasures(treasureValue);
             Destroy(gameObject);

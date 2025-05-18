@@ -69,7 +69,12 @@ public class UImanagement : MonoBehaviour
     void Update()
     {
         UpdateScoreUI();
+
+
+
     }
 
+
+   
 }
 
