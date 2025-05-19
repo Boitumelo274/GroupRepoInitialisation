@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      worldsp_0: 3356556676819504754
+      worldsp_1: -6988312403291189885
+      worldsp_2: 7615478080917387363
+      worldsp_3: -2578232728510664735
+      worldsp_4: -4640736645792803735
+      worldsp_5: -2651912903736071872
+      worldsp_6: 6067774463071544488
+      worldsp_7: 7041568527373289708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
