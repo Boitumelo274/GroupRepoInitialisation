@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 
 public class UImanagement : MonoBehaviour
 {
     public GameObject winningPanel;
+    public GameObject[] nextLevelTreasures;
+
     public GameObject gameOverMenu;
     private int score;
     public Text scoreText;
@@ -31,6 +34,11 @@ public class UImanagement : MonoBehaviour
         Movement.OnGameOver -= EnableGameOverMenu;
     }
 
+    public void CutScene2()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("CutScene2");
+    }
 
 
     
@@ -81,12 +89,35 @@ public class UImanagement : MonoBehaviour
     void Update()
     {
         UpdateScoreUI();
+    }
 
+    public void OnContinueButtonPressed()
+    {
+        // Resume game
+        Time.timeScale = 1f;
 
+        // Hide win panel
+        if (winningPanel != null)
+            winningPanel.SetActive(false);
 
+        //  Destroy old treasures
+        foreach (var old in GameObject.FindGameObjectsWithTag("Treasure"))
+        {
+            Destroy(old);
+        }
+
+        // Spawn new treasures for the next level
+        foreach (GameObject treasure in nextLevelTreasures)
+        {
+            Instantiate(treasure, GetRandomSpawnPoint(), Quaternion.identity);
+        } 
+    }
+
+    private Vector3 GetRandomSpawnPoint()
+    {
+        return new Vector3(Random.Range(-5, 5), 1f, Random.Range(-5, 5));
     }
 
 
-   
 }
 

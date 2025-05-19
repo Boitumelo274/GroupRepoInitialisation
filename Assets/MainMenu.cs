@@ -10,38 +10,34 @@ public class MainMenu : MonoBehaviour
 {
     public void StoryScene()
     {
+        Time.timeScale = 1f;
+
         SceneManager.LoadScene("CutScene");
     }
     public void PlayGame()
     {
-        
+        Time.timeScale = 1f;
+
         SceneManager.LoadScene("TREASURE-LADEN EAGLES");
     }
 
     public void mainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 
     public void Introgame()
     {
+        Time.timeScale = 1f;
+
         SceneManager.LoadScene("EndIntro");
     }
     public void QuitGame()
     {
         Application.Quit();
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
+   
 
 }
 
