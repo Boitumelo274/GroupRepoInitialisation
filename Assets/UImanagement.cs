@@ -14,6 +14,11 @@ public class UImanagement : MonoBehaviour
     public Text scoreText;
     public static treasure Instance;
 
+    [SerializeField] private ParticleSystem confettiLeft;
+    [SerializeField] private ParticleSystem confettiRight;
+
+
+
     private void OnEnable()
     {
         Movement.OnGameOver += EnableGameOverMenu;
@@ -46,6 +51,13 @@ public class UImanagement : MonoBehaviour
     public void EnableWinningPanel()
     {
         winningPanel.SetActive(true);
+
+        if (confettiLeft != null)
+            confettiLeft.Play();
+
+        if (confettiRight != null)
+            confettiRight.Play();
+
     }
 
 

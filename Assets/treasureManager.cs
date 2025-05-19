@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using System.Collections;
 
 
 
@@ -14,7 +15,10 @@ public class TreasureManager : MonoBehaviour
     [SerializeField] private GameObject winPanel;
     private bool hasWon = false;
 
-    public GameObject winningPanel; 
+    public GameObject winningPanel;
+
+    public ParticleSystem confettiLeft;
+    public ParticleSystem confettiRight;
 
     private void Awake()
     {
@@ -60,14 +64,17 @@ public class TreasureManager : MonoBehaviour
     }
 
    
+
     private void WinGame()
     {
         Debug.Log("You Win!");
         FindObjectOfType<UImanagement>()?.EnableWinningPanel();
-
+      
 
         Time.timeScale = 0f;
     }
+
+   
 
 
 }

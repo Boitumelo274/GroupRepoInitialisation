@@ -1,6 +1,3 @@
-
-
-
 using UnityEngine;
 
 public class timeToAttack : MonoBehaviour
@@ -14,9 +11,11 @@ public class timeToAttack : MonoBehaviour
     public float beginY = 20f;
     public float scrollSpeeds = 2f;
 
+    [Header("Blood Effect")]
+    public GameObject bloodPrefab; // Assign this in Inspector
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.collider.CompareTag("Player"))
         {
             Vector2 contactPoint = collision.GetContact(0).point;
@@ -28,26 +27,28 @@ public class timeToAttack : MonoBehaviour
                 if (playerHealth != null)
                 {
                     playerHealth.takeDamage(5);
+
+                    //Spawn and destroy blood effect quickly
+                    if (bloodPrefab != null)
+                    {
+                        GameObject blood = Instantiate(bloodPrefab, playerHealth.transform.position, Quaternion.identity);
+                        Destroy(blood, 0.3f); // destroys after 0.3 seconds
+                    }
                 }
             }
         }
-
     }
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position += Vector3.down * movespeed * Time.deltaTime;
+
         if (Mathf.Abs(transform.position.y - groundY) < destroyDistance)
         {
-
             if (spawner.Instance != null)
             {
                 spawner.Instance.spawnEnemy();
@@ -62,9 +63,8 @@ public class timeToAttack : MonoBehaviour
                 pos.y = pos.y + 2 * resY;
                 transform.position = pos;
 
-                scrollSpeeds = scrollSpeeds+20f;
+                scrollSpeeds += 20f;
             }
         }
     }
 }
-
