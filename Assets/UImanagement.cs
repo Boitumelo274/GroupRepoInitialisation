@@ -12,6 +12,13 @@ public class UImanagement : MonoBehaviour
     public GameObject winningPanel;
     public GameObject[] nextLevelTreasures;
 
+    public AudioClip winSFX;
+    public AudioClip looseSFX;
+    public AudioSource backgroundMusic;
+    public AudioSource sfxSource;
+
+
+
     public GameObject gameOverMenu;
     private int score;
     public Text scoreText;
@@ -54,20 +61,28 @@ public class UImanagement : MonoBehaviour
     public void EnableGameOverMenu()
     {
         gameOverMenu.SetActive(true);
+
+
+        if (backgroundMusic != null && backgroundMusic.isPlaying)
+            backgroundMusic.Pause();
+
+        // Play LOOSING SFX
+        if (sfxSource != null && looseSFX != null)
+            sfxSource.PlayOneShot(looseSFX);
     }
 
     public void EnableWinningPanel()
     {
         winningPanel.SetActive(true);
 
-        if (confettiLeft != null)
-            confettiLeft.Play();
+        if (backgroundMusic != null && backgroundMusic.isPlaying)
+            backgroundMusic.Pause();
 
-        if (confettiRight != null)
-            confettiRight.Play();
+        // Play cheering SFX
+        if (sfxSource != null && winSFX != null)
+            sfxSource.PlayOneShot(winSFX);
 
     }
-
 
     public void AddScore(int amount)
     {

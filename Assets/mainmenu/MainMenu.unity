@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 31093829}
   - component: {fileID: 31093833}
   - component: {fileID: 31093832}
+  - component: {fileID: 31093834}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -269,6 +270,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &31093834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31093828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb786c624065374db47a8a8ac06a42d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxSource: {fileID: 1891528796}
+  buttonClickSound: {fileID: 8300000, guid: b8a61bc9767000e48a2eef2634b97988, type: 3}
 --- !u!1 &49420851
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +789,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 31093834}
+        m_TargetAssemblyTypeName: soundManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &303658833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,6 +1022,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 31093834}
+        m_TargetAssemblyTypeName: soundManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1806,6 +1845,13 @@ MonoBehaviour:
   musicSource: {fileID: 1341025553}
   AUDSourced: {fileID: 0}
   background: {fileID: 8300000, guid: 7a26f4f5539f09241afb88b87a29e433, type: 3}
+  birdSound1: {fileID: 0}
+  birdSound2: {fileID: 0}
+  bloodSpit: {fileID: 0}
+  buttons: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  movement: {fileID: 0}
+  treasureSound: {fileID: 0}
 --- !u!4 &773360092
 Transform:
   m_ObjectHideFlags: 0
@@ -2977,6 +3023,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 31093834}
+        m_TargetAssemblyTypeName: soundManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1085577881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3450,6 +3508,18 @@ MonoBehaviour:
       - m_Target: {fileID: 31093832}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 31093834}
+        m_TargetAssemblyTypeName: soundManager, Assembly-CSharp
+        m_MethodName: PlayButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

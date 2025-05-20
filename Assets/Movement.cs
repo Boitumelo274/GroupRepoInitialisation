@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,9 @@ public class Movement : MonoBehaviour
 {
     public ParticleSystem dust;
     public GameObject gameOverPanel;
+    public AudioSource sfxSource;
+    public AudioClip moving;
+    public AudioClip gruntSFX;
 
     public float moveSpeed = 5f;
     private int currentLane = 1;
@@ -18,6 +22,12 @@ public class Movement : MonoBehaviour
 
     public float speed = 0f;
 
+    private bool isShaking = false;
+    private float shakeDuration = 0.2f;
+    private float shakeTimer = 0f;
+    private float shakeMagnitude = 0.1f;
+    private Vector3 originalPosition;
+
     private bool isGameOver = false;
 
     public void takeDamage(int amount)
@@ -26,6 +36,15 @@ public class Movement : MonoBehaviour
         health = Mathf.Clamp(health, 0, 100);
 
         print("Health :" + health);
+        if (sfxSource != null && gruntSFX != null)
+        {
+            sfxSource.PlayOneShot(gruntSFX);
+        }
+
+        if (!isGameOver)
+        {
+            StartShake();
+        }
 
         if (health <= 0 && !isGameOver)
         {
@@ -44,6 +63,8 @@ public class Movement : MonoBehaviour
     void Start()
     {
         SetupDust();
+        originalPosition = transform.localPosition;
+
     }
 
     void Update()
@@ -56,6 +77,7 @@ public class Movement : MonoBehaviour
         {
             currentLane--;
             moved = true;
+
         }
         else if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && currentLane < lanePositions.Length - 1)
         {
@@ -66,19 +88,32 @@ public class Movement : MonoBehaviour
         if (moved)
         {
             CreateDust();
+
+            if(sfxSource != null && moving != null)
+            {
+                sfxSource.PlayOneShot(moving);
+            }
         }
 
         Vector3 targetPosition = new Vector3(lanePositions[currentLane], transform.position.y, transform.position.z);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        if (health > 0)
-        {
-            speed += 2f * Time.deltaTime;
-            print("Player speed: " + speed);
-        }
+        
 
         health = Mathf.Clamp(health, 0, 100);
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+
+        if (isShaking)
+        {
+            shakeTimer -= Time.deltaTime;
+            transform.localPosition = originalPosition + (Vector3)UnityEngine.Random.insideUnitCircle * shakeMagnitude;
+
+            if (shakeTimer <= 0f)
+            {
+                isShaking = false;
+                transform.localPosition = originalPosition;
+            }
+        }
     }
 
     void CreateDust()
@@ -108,5 +143,13 @@ public class Movement : MonoBehaviour
             );
             colorOverLifetime.color = new ParticleSystem.MinMaxGradient(grad);
         }
+    }
+
+    void StartShake()
+    {
+        isShaking = true;
+        shakeTimer = shakeDuration;
+        originalPosition = transform.localPosition;
+
     }
 }

@@ -12,6 +12,9 @@ public class treasure : MonoBehaviour
     private bool hasTriggered;
     private TreasureManager treasureManager;
 
+    public AudioClip collectSFX;
+    public AudioSource sfxSource;
+
     private void Start()
     {
         treasureManager = TreasureManager.instance;
@@ -21,9 +24,16 @@ public class treasure : MonoBehaviour
     {
         if (collision.CompareTag("Player") && !hasTriggered)
         {   
-           // Inventory.Instance.AddTeasure(name.)
+           
             hasTriggered = true;
-            treasureManager.ChangeTreasures(treasureValue);
+
+            if(sfxSource!= null)
+            {
+                if (sfxSource != null)
+                    sfxSource.PlayOneShot(collectSFX);
+            }
+          
+             treasureManager.ChangeTreasures(treasureValue);
             Destroy(gameObject);
         }
     }

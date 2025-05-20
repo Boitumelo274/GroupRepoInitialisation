@@ -11,6 +11,13 @@ public class timeToAttack : MonoBehaviour
     public float beginY = 20f;
     public float scrollSpeeds = 2f;
 
+    public AudioSource sfxSource;
+    public AudioClip eagleSFX;
+    public AudioClip bloodSFX;
+
+    private bool hasScreeched = false;
+
+
     [Header("Blood Effect")]
     public GameObject bloodPrefab; // Assign this in Inspector
 
@@ -28,12 +35,18 @@ public class timeToAttack : MonoBehaviour
                 {
                     playerHealth.takeDamage(5);
 
+                    if (sfxSource != null && bloodSFX != null)
+                    {
+                        sfxSource.PlayOneShot(bloodSFX);
+                    }
+
                     //Spawn and destroy blood effect quickly
                     if (bloodPrefab != null)
                     {
                         GameObject blood = Instantiate(bloodPrefab, playerHealth.transform.position, Quaternion.identity);
                         Destroy(blood, 0.3f); // destroys after 0.3 seconds
                     }
+                    Destroy(gameObject);
                 }
             }
         }
@@ -41,11 +54,29 @@ public class timeToAttack : MonoBehaviour
 
     void Start()
     {
+        if (sfxSource != null && eagleSFX != null)
+        {
+            sfxSource.PlayOneShot(eagleSFX);
+        }
     }
 
     void Update()
     {
         transform.position += Vector3.down * movespeed * Time.deltaTime;
+
+        if(player !=null)
+        {
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+            if(distanceToPlayer < 5f && !hasScreeched)
+            {
+                if(sfxSource != null && eagleSFX != null)
+                {
+                    sfxSource.PlayOneShot(eagleSFX);
+                    hasScreeched = true;
+                }
+            }
+        }
 
         if (Mathf.Abs(transform.position.y - groundY) < destroyDistance)
         {

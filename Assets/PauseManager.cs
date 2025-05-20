@@ -5,6 +5,10 @@ public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public TMP_Text pauseButtonText;
+    public AudioSource backgroundMusic;
+    public AudioSource sfxSource;
+    public AudioClip pauseSFX;
+
 
 
     private bool isPaused = false;
@@ -21,6 +25,12 @@ public class PauseManager : MonoBehaviour
 
             if (pauseButtonText != null)
                 pauseButtonText.text = "Resume";
+
+            if (backgroundMusic != null && backgroundMusic.isPlaying)
+                backgroundMusic.Pause();
+
+            if (sfxSource != null && pauseSFX != null)
+                sfxSource.PlayOneShot(pauseSFX);
         }
         else
         {
@@ -30,6 +40,9 @@ public class PauseManager : MonoBehaviour
 
             if (pauseButtonText != null)
                 pauseButtonText.text = "Pause";
+
+            if (backgroundMusic != null)
+                backgroundMusic.UnPause();
         }
     }
 
