@@ -728,7 +728,6 @@ GameObject:
   - component: {fileID: 1115575633}
   - component: {fileID: 1115575634}
   - component: {fileID: 1115575635}
-  - component: {fileID: 1115575636}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -890,20 +889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946635483403d9744a410f8395f7be85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1115575636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115575629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb786c624065374db47a8a8ac06a42d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sfxSource: {fileID: 133576499}
-  buttonClickSound: {fileID: 8300000, guid: b8a61bc9767000e48a2eef2634b97988, type: 3}
 --- !u!1 &1144377888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1103,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23d793cbc516312409bb832e668efc15, type: 3}
+--- !u!1 &1432519879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432519881}
+  - component: {fileID: 1432519880}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1432519880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432519879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb786c624065374db47a8a8ac06a42d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxSource: {fileID: 133576499}
+  buttonClickSound: {fileID: 8300000, guid: b8a61bc9767000e48a2eef2634b97988, type: 3}
+--- !u!4 &1432519881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432519879}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.063038, y: -8.924838, z: -9.982396}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1466078172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1277,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1115575636}
+      - m_Target: {fileID: 1432519880}
         m_TargetAssemblyTypeName: soundManager, Assembly-CSharp
         m_MethodName: PlayButtonClick
         m_Mode: 1
@@ -1547,3 +1578,4 @@ SceneRoots:
   - {fileID: 260943726}
   - {fileID: 1259246333}
   - {fileID: 703573604}
+  - {fileID: 1432519881}
