@@ -2193,8 +2193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000017166, y: 131}
-  m_SizeDelta: {x: 200.757, y: 47.4681}
+  m_AnchoredPosition: {x: 0.00011778, y: 39.999992}
+  m_SizeDelta: {x: 133.75, y: 38.9133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246464827
 MonoBehaviour:
@@ -4704,8 +4704,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0014653, y: 0}
-  m_SizeDelta: {x: 200.76, y: 48.9239}
+  m_AnchoredPosition: {x: 0.001322, y: -42.932}
+  m_SizeDelta: {x: 133.7476, y: 37.5175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &417312416
 MonoBehaviour:
@@ -4992,8 +4992,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.6828003, y: -45.82892}
-  m_SizeDelta: {x: -993.6915, y: -275.7599}
+  m_AnchoredPosition: {x: -5.451721, y: -148.79999}
+  m_SizeDelta: {x: -1140.1616, y: -493.4755}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &438687748
 GameObject:
@@ -9458,7 +9458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 290.56}
+  m_AnchoredPosition: {x: -2.6828, y: 299.56}
   m_SizeDelta: {x: 138.8762, y: 38.1228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991683633
@@ -16163,6 +16163,7 @@ MonoBehaviour:
   backgroundMusic: {fileID: 1351808990}
   sfxSource: {fileID: 991574753}
   pauseSFX: {fileID: 8300000, guid: d8b7e379ac0067f49affcd42251cd55b, type: 3}
+  pauseButton: {fileID: 991683631}
 --- !u!4 &1730700709
 Transform:
   m_ObjectHideFlags: 0

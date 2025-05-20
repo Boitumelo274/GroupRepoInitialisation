@@ -69,6 +69,9 @@ public class UImanagement : MonoBehaviour
         // Play LOOSING SFX
         if (sfxSource != null && looseSFX != null)
             sfxSource.PlayOneShot(looseSFX);
+
+        FindObjectOfType<PauseManager>().DisablePauseButton();
+
     }
 
     public void EnableWinningPanel()
@@ -81,6 +84,8 @@ public class UImanagement : MonoBehaviour
         // Play cheering SFX
         if (sfxSource != null && winSFX != null)
             sfxSource.PlayOneShot(winSFX);
+
+        FindObjectOfType<PauseManager>().DisablePauseButton();
 
     }
 

@@ -10,7 +10,7 @@ public class PauseManager : MonoBehaviour
     public AudioClip pauseSFX;
 
 
-
+    public GameObject pauseButton;
     private bool isPaused = false;
 
     public void TogglePause()
@@ -52,6 +52,14 @@ public class PauseManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))  //  alternative pause
         {
             TogglePause();
+        }
+    }
+
+    public void DisablePauseButton()
+    {
+        if (pauseButton != null)
+        {
+            Destroy(pauseButton); 
         }
     }
 }
