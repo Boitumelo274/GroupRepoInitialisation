@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: 808c31d3d5415584abdc0e647dfd1490
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3773114962225204484
+    second: healthBarGame.psd_only heart_0
+  - first:
+      213: -3548592285641616542
+    second: healthBarGame.psd_only heart_1
+  - first:
+      213: 6722313660161672140
+    second: healthBarGame.psd_only heart_2
+  - first:
+      213: -3202912120964725583
+    second: healthBarGame.psd_only heart_3
+  - first:
+      213: 3127304853369759884
+    second: healthBarGame.psd_only heart_4
+  - first:
+      213: 2003569020295670437
+    second: healthBarGame.psd_only heart_5
+  - first:
+      213: -748190702067523320
+    second: healthBarGame.psd_only heart_6
+  - first:
+      213: -2156840046389116739
+    second: healthBarGame.psd_only heart_7
+  - first:
+      213: -7390371626846382821
+    second: healthBarGame.psd_only heart_8
+  - first:
+      213: -1993656444414690752
+    second: healthBarGame.psd_only heart_9
+  - first:
+      213: 1788161551429892855
+    second: healthBarGame.psd_only heart_10
+  - first:
+      213: -3966384836236662524
+    second: healthBarGame.psd_only heart_11
+  - first:
+      213: -6795354269188623833
+    second: healthBarGame.psd_only heart_12
+  - first:
+      213: -8384174107292347436
+    second: healthBarGame.psd_only heart_13
+  - first:
+      213: -4588763129003188918
+    second: healthBarGame.psd_only heart_14
+  - first:
+      213: 8938992947447231560
+    second: healthBarGame.psd_only heart_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_0
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 3804
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d052c311ccc5430800000000000000
+      internalID: 3773114962225204484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1720
+        width: 2308
+        height: 1993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263d3a11e1ed0cec0800000000000000
+      internalID: -3548592285641616542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 3667
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc341b658a47a4d50800000000000000
+      internalID: 6722313660161672140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_3
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 3599
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4ca1f4568fc83d0800000000000000
+      internalID: -3202912120964725583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2572
+        width: 276
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88a579e13b666b20800000000000000
+      internalID: 3127304853369759884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_5
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 3510
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aa63b9986b1ecb10800000000000000
+      internalID: 2003569020295670437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_6
+      rect:
+        serializedVersion: 2
+        x: 4291
+        y: 3070
+        width: 970
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801e3034584ed95f0800000000000000
+      internalID: -748190702067523320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_7
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 3473
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0c3adb76d5112e0800000000000000
+      internalID: -2156840046389116739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_8
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 2528
+        width: 138
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1512b74920207990800000000000000
+      internalID: -7390371626846382821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_9
+      rect:
+        serializedVersion: 2
+        x: 2505
+        y: 2415
+        width: 560
+        height: 889
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a7e72d60c1554e0800000000000000
+      internalID: -1993656444414690752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_10
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1671
+        width: 188
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa7df9f473d0d810800000000000000
+      internalID: 1788161551429892855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_11
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1649
+        width: 123
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4092e99910294f8c0800000000000000
+      internalID: -3966384836236662524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_12
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1587
+        width: 100
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722f316ab4d02b1a0800000000000000
+      internalID: -6795354269188623833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_13
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1504
+        width: 271
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3dfc7121e65ab80800000000000000
+      internalID: -8384174107292347436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_14
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1475
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4dda591f307150c0800000000000000
+      internalID: -4588763129003188918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthBarGame.psd_only heart_15
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 1289
+        width: 122
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844705299bead0c70800000000000000
+      internalID: 8938992947447231560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

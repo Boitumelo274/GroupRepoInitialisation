@@ -49,10 +49,10 @@ public class PauseManager : MonoBehaviour
  
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))  //  alternative pause
+       /* if (Input.GetKeyDown(KeyCode.Escape))  //  alternative pause
         {
             TogglePause();
-        }
+        }*/
     }
 
     public void DisablePauseButton()

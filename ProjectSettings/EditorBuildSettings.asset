@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TREASURE-LADEN EAGLES.unity
     guid: daabc2e64d82002419fa74ce8a03c54c
   - enabled: 1
-    path: Assets/CutScene.unity
+    path: Assets/Scenes/CutScene.unity
     guid: 74380049c9c415d45bbc12c9c3e74af5
   - enabled: 1
     path: Assets/Scenes/EndIntro.unity

@@ -9,11 +9,12 @@ public class EnemySpawnerScrip : MonoBehaviour
     public GameObject enemy;
     public float spawnRate = 2f;
     private float timer = 0f;
+    public float spawnRangex;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class EnemySpawnerScrip : MonoBehaviour
         }
         else
         {
+            spawnRangex = Random.Range(-12f, 0f);
             Instantiate(enemy, transform.position, transform.rotation);
             timer = 0;
         }
