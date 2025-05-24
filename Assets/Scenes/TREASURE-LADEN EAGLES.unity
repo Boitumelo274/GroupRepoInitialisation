@@ -8669,8 +8669,6 @@ MonoBehaviour:
   winGoal: 450
   winPanel: {fileID: 1427420787}
   winningPanel: {fileID: 0}
-  confettiLeft: {fileID: 0}
-  confettiRight: {fileID: 0}
 --- !u!4 &862044769
 Transform:
   m_ObjectHideFlags: 0
@@ -10909,8 +10907,6 @@ MonoBehaviour:
   winGoal: 450
   winPanel: {fileID: 1427420787}
   winningPanel: {fileID: 0}
-  confettiLeft: {fileID: 0}
-  confettiRight: {fileID: 0}
 --- !u!1 &1097541328
 GameObject:
   m_ObjectHideFlags: 0
@@ -11902,7 +11898,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167168095}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
@@ -23867,8 +23863,6 @@ MonoBehaviour:
   winGoal: 450
   winPanel: {fileID: 0}
   winningPanel: {fileID: 0}
-  confettiLeft: {fileID: 0}
-  confettiRight: {fileID: 0}
 --- !u!212 &1702445981869008284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23945,8 +23939,6 @@ MonoBehaviour:
   winGoal: 450
   winPanel: {fileID: 0}
   winningPanel: {fileID: 0}
-  confettiLeft: {fileID: 0}
-  confettiRight: {fileID: 0}
 --- !u!61 &2171255946299844665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24164,8 +24156,6 @@ MonoBehaviour:
   winGoal: 450
   winPanel: {fileID: 0}
   winningPanel: {fileID: 0}
-  confettiLeft: {fileID: 0}
-  confettiRight: {fileID: 0}
 --- !u!4 &6267861254932976708
 Transform:
   m_ObjectHideFlags: 0
@@ -24333,8 +24323,6 @@ MonoBehaviour:
   winGoal: 450
   winPanel: {fileID: 0}
   winningPanel: {fileID: 0}
-  confettiLeft: {fileID: 0}
-  confettiRight: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

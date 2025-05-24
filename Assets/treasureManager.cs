@@ -17,8 +17,7 @@ public class TreasureManager : MonoBehaviour
 
     public GameObject winningPanel;
 
-    public ParticleSystem confettiLeft;
-    public ParticleSystem confettiRight;
+  
 
     private void Awake()
     {
