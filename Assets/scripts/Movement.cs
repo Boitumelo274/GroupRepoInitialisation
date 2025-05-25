@@ -1,6 +1,7 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
@@ -58,6 +59,12 @@ public class Movement : MonoBehaviour
             OnGameOver?.Invoke();
             Time.timeScale = 0f;
         }
+    }
+
+    public void addHealth(int amount)
+    {
+        health += amount;
+        Debug.Log("Health increased to " +  health);
     }
 
     void Start()
