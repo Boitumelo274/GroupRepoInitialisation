@@ -20,7 +20,7 @@ public class timeToAttack : MonoBehaviour
     [Header("Blood Effect")]
     public GameObject bloodPrefab;
 
-    // ✅ Track day/night transition
+    
     private static bool previousNightState = false;
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -55,20 +55,22 @@ public class timeToAttack : MonoBehaviour
 
     void Start()
     {
+        Invoke(nameof(PlayBirdSound), 0.1f); // slight delay fixes audio init issues
+    }
+
+    void PlayBirdSound()
+    {
         if (sfxSource != null && eagleSFX != null)
         {
             sfxSource.PlayOneShot(eagleSFX);
         }
-
-        // Initialize night state tracker
-        previousNightState = GameSta.isNight;
     }
 
     void Update()
     {
         transform.position += Vector3.down * movespeed * Time.deltaTime;
 
-        // ✅ Play eagle sound when transitioning from night → day
+       
         if (previousNightState && !GameSta.isNight)
         {
             if (sfxSource != null && eagleSFX != null)
@@ -77,7 +79,7 @@ public class timeToAttack : MonoBehaviour
             }
         }
 
-        // ✅ Update the night state for next frame
+        
         previousNightState = GameSta.isNight;
 
         if (player != null)
