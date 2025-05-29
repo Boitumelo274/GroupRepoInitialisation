@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class timeToAttack : MonoBehaviour
 {
@@ -17,9 +17,11 @@ public class timeToAttack : MonoBehaviour
 
     private bool hasScreeched = false;
 
-
     [Header("Blood Effect")]
-    public GameObject bloodPrefab; // Assign this in Inspector
+    public GameObject bloodPrefab;
+
+    // ✅ Track day/night transition
+    private static bool previousNightState = false;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -40,11 +42,10 @@ public class timeToAttack : MonoBehaviour
                         sfxSource.PlayOneShot(bloodSFX);
                     }
 
-                    //Spawn and destroy blood effect quickly
                     if (bloodPrefab != null)
                     {
                         GameObject blood = Instantiate(bloodPrefab, playerHealth.transform.position, Quaternion.identity);
-                        Destroy(blood, 0.3f); // destroys after 0.3 seconds
+                        Destroy(blood, 0.3f);
                     }
                     Destroy(gameObject);
                 }
@@ -58,19 +59,34 @@ public class timeToAttack : MonoBehaviour
         {
             sfxSource.PlayOneShot(eagleSFX);
         }
+
+        // Initialize night state tracker
+        previousNightState = GameSta.isNight;
     }
 
     void Update()
     {
         transform.position += Vector3.down * movespeed * Time.deltaTime;
 
-        if(player !=null)
+        // ✅ Play eagle sound when transitioning from night → day
+        if (previousNightState && !GameSta.isNight)
+        {
+            if (sfxSource != null && eagleSFX != null)
+            {
+                sfxSource.PlayOneShot(eagleSFX);
+            }
+        }
+
+        // ✅ Update the night state for next frame
+        previousNightState = GameSta.isNight;
+
+        if (player != null)
         {
             float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-            if(distanceToPlayer < 5f && !hasScreeched)
+            if (distanceToPlayer < 5f && !hasScreeched)
             {
-                if(sfxSource != null && eagleSFX != null)
+                if (sfxSource != null && eagleSFX != null)
                 {
                     sfxSource.PlayOneShot(eagleSFX);
                     hasScreeched = true;

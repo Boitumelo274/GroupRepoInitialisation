@@ -1707,8 +1707,8 @@ Transform:
   m_GameObject: {fileID: 707322494}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.647, y: -12.6722, z: 0}
-  m_LocalScale: {x: 0.7905922, y: 0.5860194, z: 1}
+  m_LocalPosition: {x: -23.0103, y: -12.6722, z: 0}
+  m_LocalScale: {x: 0.7481374, y: 0.5860194, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2227,7 +2227,7 @@ Transform:
   m_GameObject: {fileID: 837198498}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.7211, y: -6.2715, z: 0}
+  m_LocalPosition: {x: -31.93, y: -6.69, z: 0}
   m_LocalScale: {x: 0.18843144, y: 0.1103799, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3726,7 +3726,7 @@ GameObject:
   - component: {fileID: 1655980959}
   - component: {fileID: 1655980958}
   m_Layer: 0
-  m_Name: "\u2014Pngtree\u2014white moon crescent illustration_4885145_0"
+  m_Name: moon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
