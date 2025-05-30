@@ -27,6 +27,8 @@ public class TreasureManager : MonoBehaviour
             instance = this; 
             DontDestroyOnLoad(gameObject); 
         }
+        
+        
     }
 
     private void UpdateUI()

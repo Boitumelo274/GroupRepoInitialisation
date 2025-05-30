@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class DayNightCycle : MonoBehaviour
 {
     public float dayDuration = 15f;
@@ -9,6 +9,9 @@ public class DayNightCycle : MonoBehaviour
     private float timer = 0f;
     private enum Phase { Day, Transition, Night }
     private Phase currentPhase = Phase.Day;
+
+    private bool firstDayEnded = false;
+    public static bool spawnMagnetNow = false;
 
     void Update()
     {
@@ -35,10 +38,16 @@ public class DayNightCycle : MonoBehaviour
 
     void SwitchToPhase(Phase newPhase)
     {
+
+        if(newPhase == Phase.Transition && !firstDayEnded)
+        {
+            firstDayEnded = true;
+            spawnMagnetNow = true;
+        }
         currentPhase = newPhase;
         timer = 0f;
 
-      
         GameSta.isNight = (newPhase == Phase.Night);
     }
+
 }
