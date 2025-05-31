@@ -12410,7 +12410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a9721fedd7caf428dae2735a5e8f56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treasure: {fileID: 1518265537352808393, guid: 34046118162963d40b3cad846ee73311, type: 3}
+  treasure: {fileID: 5378199530934265255, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
   spawnRate: 2
 --- !u!4 &1297506511
 Transform:
@@ -23961,6 +23961,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a083a011fe195f4f99856a259ce87f1, type: 3}
+--- !u!1001 &895519322714660822
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.33401
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.0885086
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1062443
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035364273749193787, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5378199530934265255, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
+      propertyPath: m_Name
+      value: MyTReasures (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7f3c3065deb87498fb3d00c657c517, type: 3}
 --- !u!50 &952817977382170381
 Rigidbody2D:
   serializedVersion: 5
@@ -23988,22 +24045,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1000798878401974104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2418441563225428317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e1b3e16a4a3024097d384d0262b4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treasuresDisplay: {fileID: 0}
-  winGoal: 450
-  winPanel: {fileID: 0}
-  winningPanel: {fileID: 0}
 --- !u!212 &1702445981869008284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24059,27 +24100,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1891836822168237408 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5954750001956329985, guid: 34046118162963d40b3cad846ee73311, type: 3}
-  m_PrefabInstance: {fileID: 7264927297918033196}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1930643255227328709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891836822168237408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e1b3e16a4a3024097d384d0262b4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treasuresDisplay: {fileID: 0}
-  winGoal: 450
-  winPanel: {fileID: 0}
-  winningPanel: {fileID: 0}
 --- !u!61 &2171255946299844665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24130,11 +24150,6 @@ BoxCollider2D:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2548241261071862790, guid: 7a083a011fe195f4f99856a259ce87f1, type: 3}
   m_PrefabInstance: {fileID: 869993997740501875}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2418441563225428317 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9150956417861388846, guid: 34046118162963d40b3cad846ee73311, type: 3}
-  m_PrefabInstance: {fileID: 7264927297918033196}
   m_PrefabAsset: {fileID: 0}
 --- !u!61 &3062361087803932408
 BoxCollider2D:
@@ -24205,11 +24220,6 @@ MonoBehaviour:
   eagleSFX: {fileID: 8300000, guid: 5d91d83d191859643b4387b0bf5ae55e, type: 3}
   bloodSFX: {fileID: 8300000, guid: ee7292744d4ca8e40a3b15b027df1d9b, type: 3}
   bloodPrefab: {fileID: 4141412246343386606, guid: b77f3467af1378b4c92a19d644ac479c, type: 3}
---- !u!1 &4585446762027264424 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1998904634319393517, guid: 34046118162963d40b3cad846ee73311, type: 3}
-  m_PrefabInstance: {fileID: 7264927297918033196}
-  m_PrefabAsset: {fileID: 0}
 --- !u!212 &5367233181438935203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24281,22 +24291,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &6074115120852230849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6737070852968264929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e1b3e16a4a3024097d384d0262b4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treasuresDisplay: {fileID: 0}
-  winGoal: 450
-  winPanel: {fileID: 0}
-  winningPanel: {fileID: 0}
 --- !u!4 &6267861254932976708
 Transform:
   m_ObjectHideFlags: 0
@@ -24315,84 +24309,6 @@ Transform:
   - {fileID: 135042316845877044}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6737070852968264929 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1850380272782886498, guid: 34046118162963d40b3cad846ee73311, type: 3}
-  m_PrefabInstance: {fileID: 7264927297918033196}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &7264927297918033196
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1518265537352808393, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_Name
-      value: MyTReasures
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.33401
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.0885086
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.1062443
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116834987367226798, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5336995473202216561, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.14
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1850380272782886498, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6074115120852230849}
-    - targetCorrespondingSourceObject: {fileID: 5954750001956329985, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1930643255227328709}
-    - targetCorrespondingSourceObject: {fileID: 1998904634319393517, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8805216463358670169}
-    - targetCorrespondingSourceObject: {fileID: 9150956417861388846, guid: 34046118162963d40b3cad846ee73311, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1000798878401974104}
-  m_SourcePrefab: {fileID: 100100000, guid: 34046118162963d40b3cad846ee73311, type: 3}
 --- !u!4 &7353713410527997938
 Transform:
   m_ObjectHideFlags: 0
@@ -24448,22 +24364,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8805216463358670169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4585446762027264424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e1b3e16a4a3024097d384d0262b4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treasuresDisplay: {fileID: 0}
-  winGoal: 450
-  winPanel: {fileID: 0}
-  winningPanel: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -24478,7 +24378,6 @@ SceneRoots:
   - {fileID: 862044769}
   - {fileID: 278502766}
   - {fileID: 1297506511}
-  - {fileID: 7264927297918033196}
   - {fileID: 1939680976}
   - {fileID: 1978884008}
   - {fileID: 1303749588}
@@ -24489,3 +24388,4 @@ SceneRoots:
   - {fileID: 1775321431}
   - {fileID: 1176689947}
   - {fileID: 1326562765}
+  - {fileID: 895519322714660822}
