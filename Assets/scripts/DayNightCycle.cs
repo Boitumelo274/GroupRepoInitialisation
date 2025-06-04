@@ -13,8 +13,17 @@ public class DayNightCycle : MonoBehaviour
     private bool firstDayEnded = false;
     public static bool spawnMagnetNow = false;
 
+    public GameObject ghostHawk;
+
     void Update()
     {
+
+        if(ghostHawk != null)
+        {
+          ghostHawk.SetActive(GameSta.isNight);
+
+        }
+
         timer += Time.deltaTime;
 
         switch (currentPhase)

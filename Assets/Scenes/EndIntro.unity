@@ -599,10 +599,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 797811270}
-  fullText: "\"Now You\u2019ve arrived at your first destination in the quest for
-    treasure.\nIt is said that those who dare to claim the eagle\u2019s treasure
-    are swiftly destroyed. Their attack is very fast so,\navoid them at all costs
-    if you wish to collect the highest amount of treasure in this perilous place.\""
+  fullText: "\"Now You\u2019ve arrived at your destination in the quest for treasure.\nIt
+    is said that those who dare to claim the eagle\u2019s treasure are swiftly destroyed.
+    Their attack is very fast so,\navoid them at all costs if you wish to collect
+    the highest amount of treasure in this perilous place.\""
   delay: 0.05
   startButton: {fileID: 1948369423}
   startDelay: 0

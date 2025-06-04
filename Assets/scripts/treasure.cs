@@ -9,7 +9,7 @@ public class treasure : MonoBehaviour
     public Transform player;
     public float groundY = -3.5f;
     public float destroyDistance = 0.2f;
-    private bool hasTriggered;
+    private bool hasTriggered = false;
     private TreasureManager treasureManager;
 
     public AudioClip collectSFX;
@@ -20,21 +20,23 @@ public class treasure : MonoBehaviour
         treasureManager = TreasureManager.instance;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Player") && !hasTriggered)
-        {   
-           
+        if (other.CompareTag("Player") && !hasTriggered)
+        {
             hasTriggered = true;
 
-            if(sfxSource!= null)
+            if (collectSFX != null)
             {
-                if (sfxSource != null)
-                    sfxSource.PlayOneShot(collectSFX);
+                // Create temporary audio player
+                GameObject audioObj = new GameObject("TempAudio");
+                AudioSource audioSource = audioObj.AddComponent<AudioSource>();
+                audioSource.PlayOneShot(collectSFX);
+                Destroy(audioObj, collectSFX.length); // clean it up later
             }
-          
-             treasureManager.ChangeTreasures(treasureValue);
-            Destroy(gameObject);
+            treasureManager.ChangeTreasures(treasureValue);
+
+            Destroy(gameObject); // destroy treasure immediately
         }
     }
 

@@ -4,7 +4,8 @@ public class TreasureGlow : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
-    public Color glowColor = new Color(1.5f, 1.3f, 0.6f); 
+    public Color glowColor = new Color(1.5f, 1.3f, 0.6f);
+    public float transitionDuration = 2f;
 
     void Start()
     {
