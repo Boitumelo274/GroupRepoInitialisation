@@ -28,15 +28,15 @@ public class treasure : MonoBehaviour
 
             if (collectSFX != null)
             {
-                // Create temporary audio player
+                
                 GameObject audioObj = new GameObject("TempAudio");
                 AudioSource audioSource = audioObj.AddComponent<AudioSource>();
                 audioSource.PlayOneShot(collectSFX);
-                Destroy(audioObj, collectSFX.length); // clean it up later
+                Destroy(audioObj, collectSFX.length); 
             }
             treasureManager.ChangeTreasures(treasureValue);
 
-            Destroy(gameObject); // destroy treasure immediately
+            Destroy(gameObject); 
         }
     }
 
