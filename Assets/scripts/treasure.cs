@@ -15,9 +15,16 @@ public class treasure : MonoBehaviour
     public AudioClip collectSFX;
     public AudioSource sfxSource;
 
+    public GameObject particleEffectObject; 
+
+    private ParticleSystem particleEffect;
+
     private void Start()
     {
         treasureManager = TreasureManager.instance;
+
+        particleEffect = particleEffectObject.GetComponent<ParticleSystem>();
+        particleEffectObject.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -62,6 +69,15 @@ public class treasure : MonoBehaviour
             }
 
             Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            particleEffectObject.SetActive(true);  
+            particleEffect.Play();               
         }
     }
 }

@@ -7,17 +7,19 @@ public class EnemySpawnerScrip : MonoBehaviour
     private float timer = 0f;
     public float spawnRangex;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    public float gravityScale = 0.001f; 
+    public float gravityIncreaseRate = 0.1f;
+    public float gravityMax = 10f;
     void Update()
     {
         if (GameSta.isNight) return;
 
+        // Only increase gravity scale over time
+        if (gravityScale < gravityMax)
+        {
+            gravityScale += gravityIncreaseRate * Time.deltaTime;
+            Debug.Log("gravityScale " + gravityScale);
+        }
 
         if (timer < spawnRate)
         {
@@ -29,7 +31,5 @@ public class EnemySpawnerScrip : MonoBehaviour
             Instantiate(enemy, transform.position, transform.rotation);
             timer = 0;
         }
-
-
     }
 }
