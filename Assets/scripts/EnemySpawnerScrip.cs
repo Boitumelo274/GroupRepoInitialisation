@@ -7,15 +7,30 @@ public class EnemySpawnerScrip : MonoBehaviour
     private float timer = 0f;
     public float spawnRangex;
 
+<<<<<<< HEAD
    
     void Update()
     {
         if (GameSta.isNight) return;
 
 
+=======
+    
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (GameSta.isNight) return ;
+>>>>>>> 51666540a3e2c7d92a906ca283c1f28906bdaf17
         if (timer < spawnRate)
         {
-            timer = timer + Time.deltaTime;
+            timer += Time.deltaTime;
         }
         else
         {
@@ -23,5 +38,7 @@ public class EnemySpawnerScrip : MonoBehaviour
             Instantiate(enemy, transform.position, transform.rotation);
             timer = 0;
         }
+
+
     }
 }

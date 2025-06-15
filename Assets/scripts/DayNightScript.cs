@@ -10,7 +10,7 @@ public class DayNightCycleSimple : MonoBehaviour
 
     public float transitionTime = 2f;     // Time to fade day/night
     public float dayDuration = 15f;       // Total time to stay in day mode
-    public float nightDuration = 5f;      // Total time to stay in night mode
+    public float nightDuration = 4f;      // Total time to stay in night mode
 
     private bool isNight = false;
 
