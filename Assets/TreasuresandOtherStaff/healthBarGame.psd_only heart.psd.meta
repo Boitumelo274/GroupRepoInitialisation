@@ -509,7 +509,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      healthBarGame.psd_only heart_0: 3773114962225204484
+      healthBarGame.psd_only heart_1: -3548592285641616542
+      healthBarGame.psd_only heart_10: 1788161551429892855
+      healthBarGame.psd_only heart_11: -3966384836236662524
+      healthBarGame.psd_only heart_12: -6795354269188623833
+      healthBarGame.psd_only heart_13: -8384174107292347436
+      healthBarGame.psd_only heart_14: -4588763129003188918
+      healthBarGame.psd_only heart_15: 8938992947447231560
+      healthBarGame.psd_only heart_2: 6722313660161672140
+      healthBarGame.psd_only heart_3: -3202912120964725583
+      healthBarGame.psd_only heart_4: 3127304853369759884
+      healthBarGame.psd_only heart_5: 2003569020295670437
+      healthBarGame.psd_only heart_6: -748190702067523320
+      healthBarGame.psd_only heart_7: -2156840046389116739
+      healthBarGame.psd_only heart_8: -7390371626846382821
+      healthBarGame.psd_only heart_9: -1993656444414690752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
